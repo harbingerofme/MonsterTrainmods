@@ -7,10 +7,10 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace BepinexLogIntercepter
+namespace BepinexLogProvider
 {
 
-    [BepInPlugin("me.harbingerof.monstertrainlogtobeplog","BepinexLogProvider","0.5")]
+    [BepInPlugin("me.harbingerof.monstertrainlogtobeplog","BepinexLogProvider","1.0")]
     public class PluginEntryPoint : BaseUnityPlugin
     {
         List<Hook> myHooks;

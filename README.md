@@ -1,3 +1,5 @@
 Mods for Monster Train
 
-SupressChatterLogs - turned your log to verbose so you could see what's going on? Getting annoyed you are constantly getting scrolled down by CHATTER logs? Then this is the mod for you.
+To install, find the latest release in the releases tab and drop the .dll file into your plugins folder unless otherwise specified.
+
+**BepInExLogProvider** - Did you mess up something weird in the assembly-csharp for monstertrain like I did? Do you just want prettier logprinting? Then the BepInExLogProvider is the plugin for you. It pipes all Logs to the appropriate BepInEx loglevels.

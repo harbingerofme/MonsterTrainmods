@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BepinexLogIntercepter
+namespace BepinexLogProvider
 {
     class BepinexLogProvider
     {
-        static Dictionary<string, ManualLogSource> Loggers = new Dictionary<string, ManualLogSource>();
+        static readonly Dictionary<string, ManualLogSource>  Loggers = new Dictionary<string, ManualLogSource>();
 
         static BepinexLogProvider()
         {
