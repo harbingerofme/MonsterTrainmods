@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 namespace BepinexLogProvider
 {
 
-    [BepInPlugin("me.harbingerof.monstertrainlogtobeplog","BepinexLogProvider","1.0")]
+    [BepInPlugin("me.harbingerof.monstertrainlogtobeplog","BepinexLogProvider","1.0.1")]
     public class PluginEntryPoint : BaseUnityPlugin
     {
         List<Hook> myHooks;
@@ -74,11 +74,13 @@ namespace BepinexLogProvider
         private void GenericLogHook(GenericLogDel orig, LogGroups logGroup, string message)
         {
             BepinexLogProvider.Log(GetLevelFromMethod(orig), logGroup, message);
+            orig(logGroup, message);
         }
 
         private void GenericParamLogHook(GenericLogFormatDel orig, LogGroups logGroup, string message, params object[] paramList)
         {
-            if(paramList!=null && paramList.Length > 0)
+            orig(logGroup, message, paramList);
+            if (paramList!=null && paramList.Length > 0)
             {
                 message = string.Format(message, paramList);
             }

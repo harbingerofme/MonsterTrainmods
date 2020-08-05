@@ -6,6 +6,7 @@
     <Copyright>2020</Copyright>
     <RepositoryUrl>https://github.com/harbingerofme/MonsterTrainmods</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
